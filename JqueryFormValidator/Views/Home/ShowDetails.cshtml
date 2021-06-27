@@ -1,0 +1,66 @@
+﻿@model JqueryFormValidator.Models.RegisterViewModel
+@{
+    ViewBag.Title = "ShowDetails";
+}
+
+@if (Model != null)
+{
+    <div>
+        <h2>Employee Details</h2>
+    </div>
+
+    <div>
+        First Name:                 @Model.FirstName
+    </div>
+
+    <div>
+        Last Name:                  @Model.LastName
+    </div>
+
+    <div>
+        Middle Name:                @Model.MiddleName
+    </div>
+
+    <div>
+        Telephone Number:           @Model.TelephoneNumber
+    </div>
+
+    <div>
+        Email Address:              @Model.EmailAddress
+    </div>
+
+    <div>
+        Identification Number:      @Model.IdentificationNumber
+    </div>
+
+    <div>
+        Date of Birth:              @Model.DateOfBirth.ToShortDateString()
+    </div>
+
+    <div>
+        Street Address:             @Model.StreetAddress
+    </div>
+
+    <div>
+        Secondary Address:          @Model.SecondaryAddress
+    </div>
+
+    <div>
+        City:                       @Model.City
+    </div>
+
+    <div>
+        State:                      @Model.State
+    </div>
+
+    <div>
+        Zip:                        @Model.Zip
+    </div>
+
+
+}
+else
+{
+    <div> Employee Deatils not found </div>
+}
+
